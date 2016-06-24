@@ -48,7 +48,7 @@ public class ThridActivity extends Activity {
         PendingIntent mPendingIntent = PendingIntent.getActivity(currentActitity, mPendingIntentId,
                 mStartActivity, PendingIntent.FLAG_CANCEL_CURRENT);
         AlarmManager mgr = (AlarmManager)currentActitity.getSystemService(Context.ALARM_SERVICE);
-        mgr.set(AlarmManager.RTC, System.currentTimeMillis() + 5100, mPendingIntent);
+        mgr.set(AlarmManager.RTC, System.currentTimeMillis() + 100, mPendingIntent);
 
         ScreenManager.getScreenManager().finishAllActivity();
 
